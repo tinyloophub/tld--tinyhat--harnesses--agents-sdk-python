@@ -1,0 +1,55 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "tinyhat-agents-sdk-python-v0.14.1-tinyhat",
+  "documentNamespace": "https://tinyloop.co/spdx/platform_repos/harnesses/agents-sdk-python/v0.14.1-tinyhat",
+  "creationInfo": {
+    "created": "2026-04-28T09:00:00Z",
+    "creators": [
+      "Tool: tinyhat-vendor-pipeline-v1",
+      "Organization: Tinyloop (https://tinyloop.co)"
+    ],
+    "comment": "v1 SBOM placeholder — covers the directly vendored upstream package only. Transitive dependencies are computed at runtime by the tinyhat vendor pipeline; v1.x bumps this to a generated tree (uv pip compile / pip-audit) so each pinned version row has a fully expanded SBOM."
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-openai-agents",
+      "name": "openai-agents",
+      "versionInfo": "0.14.1",
+      "downloadLocation": "https://github.com/openai/openai-agents-python/archive/refs/tags/v0.14.1.tar.gz",
+      "filesAnalyzed": false,
+      "supplier": "Organization: OpenAI",
+      "originator": "Organization: OpenAI",
+      "homepage": "https://github.com/openai/openai-agents-python",
+      "licenseDeclared": "MIT",
+      "licenseConcluded": "MIT",
+      "copyrightText": "Copyright (c) 2025 OpenAI",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3dffa4ba9351ee38b964af43b50a2fe70f1a89f6"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/openai-agents@0.14.1"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:github/openai/openai-agents-python@v0.14.1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-openai-agents"
+    }
+  ]
+}

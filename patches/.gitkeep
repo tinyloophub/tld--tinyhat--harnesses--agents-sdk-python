@@ -1,0 +1,10 @@
+# Empty patches/ directory for future tinyhat-specific diffs.
+#
+# When the tinyhat platform needs to apply a small fix on top of the
+# vendored upstream (e.g. a watchdog hook, a sandbox-network policy
+# tweak), drop the patch file here as `NNNN-tinyhat-<short-name>.patch`
+# and reference it in HARNESS.md so an external reader can see what
+# we changed and why.
+#
+# At the v1 launch this directory is empty — the wrapper applies no
+# patches.
